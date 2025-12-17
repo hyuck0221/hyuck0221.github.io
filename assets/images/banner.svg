@@ -1,0 +1,50 @@
+<svg width="1920" height="640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Neutral gradient background - works in both modes -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2d3a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3d4251;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="640" fill="url(#bg-gradient)"/>
+
+  <!-- Grid overlay -->
+  <rect width="1920" height="640" fill="url(#grid)"/>
+
+  <!-- Floating shapes with blend mode friendly colors -->
+  <!-- Large circle - top left -->
+  <circle cx="250" cy="180" r="100" fill="#7c8db5" opacity="0.15"/>
+  <circle cx="250" cy="180" r="70" fill="#9fb3d6" opacity="0.12"/>
+
+  <!-- Medium circle - right -->
+  <circle cx="1650" cy="400" r="120" fill="#d4a574" opacity="0.12"/>
+  <circle cx="1650" cy="400" r="80" fill="#e8c4a0" opacity="0.1"/>
+
+  <!-- Small accent circles -->
+  <circle cx="500" cy="450" r="60" fill="#b794c4" opacity="0.12"/>
+  <circle cx="1300" cy="200" r="50" fill="#88c7a8" opacity="0.12"/>
+
+  <!-- Rounded rectangles for modern touch -->
+  <rect x="700" y="100" width="150" height="8" rx="4" fill="#7c8db5" opacity="0.2"/>
+  <rect x="900" y="500" width="200" height="8" rx="4" fill="#e94560" opacity="0.25"/>
+
+  <!-- Small decorative dots -->
+  <circle cx="400" cy="250" r="6" fill="#7c8db5" opacity="0.4"/>
+  <circle cx="1100" cy="350" r="8" fill="#e94560" opacity="0.45"/>
+  <circle cx="1500" cy="150" r="5" fill="#88c7a8" opacity="0.4"/>
+
+  <!-- Minimal lines connecting elements -->
+  <line x1="250" y1="180" x2="400" y2="250" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+  <line x1="1300" y1="200" x2="1500" y2="150" stroke="#ffffff" stroke-width="1" opacity="0.08"/>
+
+  <!-- Wave pattern at bottom -->
+  <path d="M 0 580 Q 480 560 960 580 T 1920 580 L 1920 640 L 0 640 Z" fill="#7c8db5" opacity="0.08"/>
+  <path d="M 0 600 Q 480 580 960 600 T 1920 600 L 1920 640 L 0 640 Z" fill="#9fb3d6" opacity="0.05"/>
+</svg>
