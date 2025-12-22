@@ -208,6 +208,64 @@ html {
       color: lighten($a-color, 10%);
     }
   }
+
+  .contact-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+
+    strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 1.1em;
+      color: $footer-text-color;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      @include media-query($on-palm) {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: rgba(128, 128, 128, 0.1);
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: $footer-text-color;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.2);
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        color: $brand-color;
+
+        .contact-icon {
+          transform: scale(1.1);
+        }
+      }
+
+      .contact-icon {
+        width: 18px;
+        height: 18px;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      span {
+        font-size: 0.95em;
+      }
+    }
+  }
 }
 
 .copyleft {
