@@ -116,13 +116,64 @@ html[data-theme="dark"]  {
     }
 
     .post-list {
-      & > li:not(:last-child) {
-        border-bottom: 1px solid #545454;
+      > li {
+        background: rgba(30, 30, 30, 0.5);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+          background: rgba(40, 40, 40, 0.6);
+          border-color: rgba(255, 255, 255, 0.15);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid transparent;
+        }
       }
     }
 
-    .post-tags .post-tag:hover {
-      color: #d7d7d7;
+    .post-tags .post-tag {
+      background: linear-gradient(135deg, rgba(66, 153, 225, 0.15), rgba(102, 126, 234, 0.15));
+      color: #63b3ed;
+      border-color: rgba(66, 153, 225, 0.4);
+
+      &:hover {
+        background: linear-gradient(135deg, rgba(66, 153, 225, 0.25), rgba(102, 126, 234, 0.25));
+        color: #90cdf4;
+        box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+      }
+    }
+
+    .post-excerpt .read_more {
+      color: #63b3ed;
+
+      &:hover {
+        color: #90cdf4;
+      }
+    }
+  }
+
+  .site-footer {
+    color: #fff;
+    background-color: #000;
+
+    .contact-info {
+      border-top-color: rgba(255, 255, 255, 0.1);
+
+      strong {
+        color: #fff;
+      }
+
+      .contact-item {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: #bbb;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: #63b3ed;
+        }
+      }
     }
   }
 
